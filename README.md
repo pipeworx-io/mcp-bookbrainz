@@ -2,14 +2,14 @@
 
 BookBrainz MCP — open book metadata (MetaBrainz / sister of MusicBrainz)
 
-Part of [Pipeworx](https://pipeworx.io) — an MCP gateway connecting AI agents to 673+ live data sources.
+Part of [Pipeworx](https://pipeworx.io) — an MCP gateway connecting AI agents to 965+ live data sources.
 
 ## Tools
 
 | Tool | Description |
 |------|-------------|
-| `search` | Search any entity type by free-text. |
-| `lookup` | Fetch a single entity by BookBrainz UUID (bbid). |
+| `search` | Search BookBrainz (MetaBrainz open book database) for works, editions, authors, publishers, series, or edition-groups by free-text query. Returns matching entity records with their BookBrainz UUIDs (bbids) for use with lookup. |
+| `lookup` | Fetch a single BookBrainz entity (work, edition, author, publisher, series, or edition-group) by its UUID (bbid), with optional sub-resources (aliases, relationships, identifiers) via the includes parameter. |
 | `browse` | Browse entities of a type filtered by a related entity. e.g. browse editions by work, works by author. |
 
 ## Quick Start
@@ -26,7 +26,7 @@ Add to your MCP client (Claude Desktop, Cursor, Windsurf, etc.):
 }
 ```
 
-Or connect to the full Pipeworx gateway for access to all 673+ data sources:
+Or connect to the full Pipeworx gateway for access to all 965+ data sources:
 
 ```json
 {

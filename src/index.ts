@@ -32,7 +32,7 @@ type EntityType = (typeof ENTITY_TYPES)[number];
 const tools: McpToolExport['tools'] = [
   {
     name: 'search',
-    description: 'Search any entity type by free-text.',
+    description: 'Search BookBrainz (MetaBrainz open book database) for works, editions, authors, publishers, series, or edition-groups by free-text query. Returns matching entity records with their BookBrainz UUIDs (bbids) for use with lookup.',
     inputSchema: {
       type: 'object',
       properties: {
@@ -46,7 +46,7 @@ const tools: McpToolExport['tools'] = [
   },
   {
     name: 'lookup',
-    description: 'Fetch a single entity by BookBrainz UUID (bbid).',
+    description: 'Fetch a single BookBrainz entity (work, edition, author, publisher, series, or edition-group) by its UUID (bbid), with optional sub-resources (aliases, relationships, identifiers) via the includes parameter.',
     inputSchema: {
       type: 'object',
       properties: {
