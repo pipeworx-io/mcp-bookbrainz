@@ -1,16 +1,18 @@
-# mcp-bookbrainz
+# @pipeworx/bookbrainz
 
-BookBrainz MCP — open book metadata (MetaBrainz / sister of MusicBrainz)
+BookBrainz MCP — open book metadata database run by the MetaBrainz Foundation (sister project to MusicBrainz). No auth.
 
-Part of [Pipeworx](https://pipeworx.io) — an MCP gateway connecting AI agents to 965+ live data sources.
+Part of [Pipeworx](https://pipeworx.io) — an MCP gateway connecting AI agents to 1394+ live data sources.
 
 ## Tools
 
-| Tool | Description |
-|------|-------------|
-| `search` | Search BookBrainz (MetaBrainz open book database) for works, editions, authors, publishers, series, or edition-groups by free-text query. Returns matching entity records with their BookBrainz UUIDs (bbids) for use with lookup. |
-| `lookup` | Fetch a single BookBrainz entity (work, edition, author, publisher, series, or edition-group) by its UUID (bbid), with optional sub-resources (aliases, relationships, identifiers) via the includes parameter. |
-| `browse` | Browse entities of a type filtered by a related entity. e.g. browse editions by work, works by author. |
+- `search(query, type, limit?, offset?)` — search any entity type: work / edition / author / publisher / series / edition-group
+- `lookup(type, bbid, includes?)` — fetch a single entity by BookBrainz UUID
+- `browse(type, ...)` — list works/editions/authors filtered by relationships
+
+## Data source
+
+`https://api.bookbrainz.org/` — public REST + JSON. Coverage is much smaller than Open Library or Google Books but it's the canonical home for open editions / works for Wikidata-style data modeling.
 
 ## Quick Start
 
@@ -26,7 +28,7 @@ Add to your MCP client (Claude Desktop, Cursor, Windsurf, etc.):
 }
 ```
 
-Or connect to the full Pipeworx gateway for access to all 965+ data sources:
+Or connect to the full Pipeworx gateway for access to all 1394+ data sources:
 
 ```json
 {
@@ -50,7 +52,7 @@ The gateway picks the right tool and fills the arguments automatically.
 
 ## More
 
-- [All tools and guides](https://github.com/pipeworx-io/examples)
+- [Docs and guides](https://pipeworx.io/docs)
 - [pipeworx.io](https://pipeworx.io)
 
 ## License
