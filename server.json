@@ -3,7 +3,7 @@
   "name": "io.github.pipeworx-io/bookbrainz",
   "title": "Bookbrainz",
   "description": "BookBrainz MCP — open book metadata (MetaBrainz / sister of MusicBrainz)",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "websiteUrl": "https://pipeworx.io/packs/bookbrainz",
   "repository": {
     "url": "https://github.com/pipeworx-io/mcp-bookbrainz",
