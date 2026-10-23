@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-bookbrainz",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "BookBrainz MCP — open book metadata (MetaBrainz / sister of MusicBrainz)",
   "type": "module",
   "main": "src/index.ts",
@@ -26,7 +26,7 @@
     "@cloudflare/workers-types": "^4.20260405.1"
   },
   "pipeworx": {
-    "sourceHash": "v1-34904479bc8e6d4cb46a075e7f7f27065055c806791283732ec4c0434a80dbc7",
-    "sourceCommit": "5d8d3a58a457b8464c117515d81b8b6ecb53fdfb"
+    "sourceHash": "v1-6d8ccc5a695683a37c607340bbd554161fbdbc0a10d818d33c529119fbf767b8",
+    "sourceCommit": "70a4e816a9195016cd4af92dca2019485d4c3865"
   }
 }
